@@ -5,7 +5,50 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: white;
+}
+/* Main */
+
+body {
+    background-color: black;
 }
 
-/* Main */
+header {
+    position: absolute;
+    top: 17px;
+    left: 61px;
+}
+
+.main {
+    background-image: url(/images/iphone-bg.png);
+    height: 100vh;
+}
+
+.main h1 {
+    font-size: 45px;
+    font-weight: 400;
+    position: relative;
+    top: 307px;
+    left: 61px;
+}
+
+.main h1::after {
+    display: block;
+    content: '';
+    border: 3px solid white;
+    width: 765px;
+  
+}
+
+.main button {
+    background-color: #942878;
+    padding: 20px 16px;
+    font-size: 40px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0px 5px 21px black;
+    position: absolute;
+    bottom: 61px;
+    right: 61px;
+}
 
