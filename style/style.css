@@ -50,5 +50,11 @@ header {
     position: absolute;
     bottom: 61px;
     right: 61px;
+    transition: transform 0.1s linear;
 }
 
+.main button:hover {
+    background: #bf3199;
+    cursor: pointer;
+    transform: scale(1.01);
+}
