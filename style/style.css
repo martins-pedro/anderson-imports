@@ -6,16 +6,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: white;
+
 }
 /* Main */
 
 body {
-    background-color: black;
+    background-color: #000;
     overflow-x: hidden;
 }
 
 .logo {
-
     position: absolute;
     top: 21px;
     left: 60px;
@@ -23,9 +23,10 @@ body {
 
 
 .main {
-    background-image: url(/images/iphone-bg.png);
+    background-image: url(../images/iphone-bg.png);
     background-size: cover;
     height: 101vh;
+    overflow-x: hidden;
 }
 
 .main h1 {
@@ -137,4 +138,10 @@ body {
 .product-item h3 {
     position: relative;
     bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+    .lastProduct {
+        margin-bottom: 2rem;
+    }
 }
