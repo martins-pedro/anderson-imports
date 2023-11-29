@@ -14,14 +14,17 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.logo {
+
     position: absolute;
-    top: 17px;
-    left: 61px;
+    top: 21px;
+    left: 60px;
 }
+
 
 .main {
     background-image: url(/images/iphone-bg.png);
+    background-size: cover;
     height: 101vh;
 }
 
@@ -30,7 +33,7 @@ header {
     font-weight: 400;
     position: relative;
     top: 307px;
-    left: 61px;
+    left: 60px;
 }
 
 .main h1::after {
@@ -41,23 +44,44 @@ header {
   
 }
 
-.main button {
+.main a {
     background-color: #942878;
+    text-align: center;
     padding: 20px 16px;
     font-size: 40px;
     border-radius: 14px;
     border: none;
     box-shadow: 0px 5px 21px black;
     position: absolute;
-    bottom: 61px;
-    right: 61px;
+    bottom: 60px;
+    right: 60px;
     transition: transform 0.1s linear;
+    text-decoration: none;
 }
 
-.main button:hover {
+.main a:hover {
     background: #bf3199;
     cursor: pointer;
     transform: scale(1.01);
+}
+
+@media (max-width: 890px) {
+    .logo img {width: 200px;}
+    .main h1 {font-size: 25px; left: 35px}
+    .main h1::after {width: 420px;}
+    .main a {font-size: 25px;}
+}
+
+@media (max-width: 500px) {
+    .logo {left: 50%; transform: translateX(-50%);}
+    .main h1 {font-size: 18px;}
+    .main h1::after {width: 304px; border: 2px solid;}
+    .main a {left: 50%; transform: translateX(-50%); padding: 13px; font-size: 18px; width: 180px;}
+    .main a:hover {
+        background: #bf3199;
+        cursor: pointer;
+        transform: scale(1.01);
+    }
 }
 
 /* Products */
