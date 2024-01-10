@@ -74,6 +74,7 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  z-index: 1000;
 }
 
 .whatsappFixed:hover {transform: scale(1.04);}
