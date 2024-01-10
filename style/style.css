@@ -62,21 +62,23 @@ body {
 
 .whatsappFixed {
   position: fixed;
-  bottom: 6%;
-  right: 3%;
+  bottom: 30px;
+  right: 30px;
   height: 60px;
   width: 60px;
   background-color: #25d366;
   border-radius: 50%;
-  text-align: center;
-  font-size: 2rem;
+  font-size: 35px;
   box-shadow: 1px 1px 10px #3ae177;
-  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.whatsappFixed:hover {transform: scale(1.04);}
+/* .whatsappFixed:hover {transform: scale(1.04);} */
 
-.whatsappFixed > i {top: 6px;}
+.whatsappFixed > i {transform: translateY(-20%);}
 
 @media (max-width: 890px) {
   .logo img {
@@ -89,7 +91,7 @@ body {
   .main h1::after {
     width: 325px;
   }
-  .main a {
+  .btnGetToKnow {
     font-size: 25px;
   }
 }
@@ -106,7 +108,7 @@ body {
     width: 235px;
     border: 2px solid;
   }
-  .main a {
+  .btnGetToKnow{
     left: 50%;
     transform: translateX(-50%);
     padding: 13px;
