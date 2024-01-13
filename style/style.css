@@ -77,9 +77,13 @@ body {
   z-index: 1000;
 }
 
-.whatsappFixed:hover {transform: scale(1.04);}
+.whatsappFixed:hover {
+  transform: scale(1.04);
+}
 
-.whatsappFixed > i {transform: translateY(-20%);}
+.whatsappFixed > i {
+  transform: translateY(-20%);
+}
 
 @media (max-width: 890px) {
   .logo img {
@@ -109,7 +113,7 @@ body {
     width: 235px;
     border: 2px solid;
   }
-  .btnGetToKnow{
+  .btnGetToKnow {
     left: 50%;
     transform: translateX(-50%);
     padding: 13px;
@@ -139,7 +143,7 @@ body {
 .emmetProduct {
   margin: 0 auto;
   display: flex;
-  max-width: 70%;
+  max-width: 60%;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 4rem;
