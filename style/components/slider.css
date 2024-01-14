@@ -1,0 +1,132 @@
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  height: 550px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px 0px;
+}
+
+.slides {
+  width: 500%;
+  height: 550px;
+  display: flex;
+}
+
+.slides .hidden-radio {
+  width: 0;
+  height: 0;
+}
+
+.slide-img {
+  width: 20%;
+  position: relative;
+  transition: 1s;
+}
+
+.slide-img img {
+  width: 800px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.navigation-manual {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-manual {
+  border: 2px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-manual:hover {
+  background-color: #fff;
+}
+
+.btn-manual:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio-image1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio-image2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio-image3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio-image4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio-image5:checked ~ .first {
+  margin-left: -80%;
+}
+
+.btn-auto {
+  border: 2px solid #fff;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.btn-auto:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 520px;
+  display: flex;
+  justify-content: center;
+}
+
+#radio-image1:checked ~ .navigation-auto .btn-auto.-one {
+  background-color: #fff;
+}
+
+#radio-image2:checked ~ .navigation-auto .btn-auto.-two {
+  background-color: #fff;
+}
+
+#radio-image3:checked ~ .navigation-auto .btn-auto.-three {
+  background-color: #fff;
+}
+
+#radio-image4:checked ~ .navigation-auto .btn-auto.-four {
+  background-color: #fff;
+}
+
+#radio-image5:checked ~ .navigation-auto .btn-auto.-five {
+  background-color: #fff;
+}
+
+@media (max-width: 500px) {
+  .slider,
+  .slides,
+  .navigation-auto {
+    max-height: 300px;
+  }
+
+  .slide-img img {
+    width: 100%;
+  }
+
+  .navigation-auto {
+    margin-top: 270px;
+  }
+}

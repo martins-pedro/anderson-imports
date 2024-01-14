@@ -1,0 +1,45 @@
+.main-title {
+  font-size: 45px;
+  font-weight: 400;
+  position: relative;
+  top: 307px;
+  left: 60px;
+}
+
+.main-title::after {
+  display: block;
+  content: "";
+  border: 3px solid white;
+  width: 590px;
+}
+
+.main-subtitle {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.main-subtitle.-black {
+  color: #000;
+}
+
+.main-paragraph {
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 890px) {
+  .main-title {
+    font-size: 25px;
+    left: 35px;
+  }
+  .main-title:after {
+    width: 325px;
+  }
+}

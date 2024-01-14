@@ -1,0 +1,25 @@
+.main-section {
+  background-image: url(../../images/iphone-bg.png);
+  background-size: cover;
+  height: 101vh;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 21px;
+  left: 60px;
+}
+
+@media (max-width: 890px) {
+  .logo img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

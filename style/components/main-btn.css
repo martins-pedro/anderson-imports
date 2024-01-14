@@ -1,0 +1,34 @@
+.main-btn {
+  background-color: #942878;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 40px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0px 5px 21px black;
+  position: absolute;
+  bottom: 60px;
+  right: 110px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background: #bf3199;
+  cursor: pointer;
+}
+
+@media (max-width: 890px) {
+  .main-btn {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 13px;
+    font-size: 18px;
+    width: 260px;
+  }
+}
